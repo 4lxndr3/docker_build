@@ -25,7 +25,7 @@ jobs:
           context: .
           file: ./Dockerfile        # ✅ Corrigido de dockerfile → file
           push: true
-          tags: moisesgc/webacademy:latest
+          tags: 4lxndr3/webacademy:latest
 
   deploy:
     runs-on: ubuntu-latest
