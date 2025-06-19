@@ -2,8 +2,8 @@ name: Build on DockerHub
 on:
  push:
 env:
- DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
- DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
+ DOCKERHUB_USERNAME: 4lxndr3
+ DOCKERHUB_TOKEN: dckr_pat_17Il6RRGOwukYcm7J3h7mG-5S10
 jobs:
  build:
    runs-on: ubuntu-latest
@@ -16,7 +16,7 @@ jobs:
        uses: docker/login-action@v1
        with:
          username: 4lxndr3
-         password: dckr_pat_17Il6RRGOwukYcm7J3h7mG-5S10
+         password: Icomp@735355
      - name: Build and push Docker image
        uses: docker/build-push-action@v2
        with:
